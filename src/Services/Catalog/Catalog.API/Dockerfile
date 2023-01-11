@@ -1,5 +1,11 @@
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
+#ADD GEP-Root-CA.crt /usr/local/share/ca-certificates/GEP-Root-CA.crt
+#RUN chmod 644 /usr/local/share/ca-certificates/GEP-Root-CA.crt && update-ca-certificates
+
+#ADD GEP-Root-CA.crt /usr/local/share/ca-certificates/GEP-Root-CA.crt
+#RUN chmod 644 /usr/local/share/ca-certificates/GEP-Root-CA.crt && update-ca-certificates
+
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
 EXPOSE 80
